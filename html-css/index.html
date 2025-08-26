@@ -8,8 +8,9 @@
 </head>
 <body>
     <header class="topo">
+        <img src=""alt="logotipo da pagina" class="logo"/>
 
-        <img src="https://www.maxicar.com.br/wp-content/uploads/2015/03/mini-carros-perl-P50.jpg" alt="">
+    
 
         <h1>html + css : Fundamenos</h1>
         <p class="subtitulo">Estrutura, tags basicas, seletores e box model </p>
@@ -26,11 +27,104 @@
         <section id="sobre" class="card">
             <h2>Sobre esta pagina</h2>
             <p>Esta e uma pagina de exemplo para ensinar <strong>HTML</strong> e <em>CSS</em> do zero. Observe a estrutura do codigo, os comentarios e o estilo aplicado</p>
+            <h3>o que vamos ver:</h3>
+            <ul>
+                <li>Estrutura basica do HTML</li>
+                <li>Seletores CSS : elemento, classe e id </li>
+                <li>Box model: margin, padding e border</li>
+                <li>Links, imagens, listas e tabelas</li>
+                <li>Formulario simples e responsividade</li>
+            </ul>
+            <p>
+                Dica: consulte a documentação do MDN
+                <a href="https://developer.mozilla.org/en-US"
+                target="_blank"
+                >aqui
+            </a>
+            </p>
+        </section>
 
-            
+        <section id="conteudo" class="card">
+            <h2>Conceitos de CSS essenciais</h2>
+            <article class ="caixa">
+                <h3>Seletores &amp; especificidade</h3>
+                <p>Regras CSS podem mirar em elementos, classes oi ids.
+                    Quando ha conflito, o navegador escolhe pela prioridade:
+                    id > class > elemento
+                </p>
+                <p id="destaque">Este paragrafo tem um ID para destaque</p>
+
+            </article>
+
+            <article class="caixa">
+                <h3>box Model</h3>
+                <p>Todo elemento em bloco possui content, padding, border e margin.</p>
+                <div class="box-model-demo">Sou uma caixa</div>
+            </article>
+
+            <article class="caixa">
+                <h3>Display: inline vs blocks</h3>
+                <p><span class="tag-inline">span inline</span>fica na linha ,enquanto elementos quebram linhas.</p>
+
+            </article>
+        </section>
+
+
+        <section id="tabela" class="card">
+            <h2>Tabela de horarios (exemplos)</h2>
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Conteudo</th>
+                        <th>Duração</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>Esrutura HTML</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>Seletores e box model</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>Formulario e responsivo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!--seção Formulario-->
+        <section id="contato" class="card">
+            <h2>Fale conosco</h2>
+            <form action="#" class="formulario" method="post">
+                <div class="grupo">
+                    <label for="nome">nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </div>
+                <div class="grupo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+                </div>
+
+
+                <div class="grupo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                </div>
+                <button type="submit"> Enviar </button>
+            </form>
 
         </section>
 
     </main>
+    <!--rodape-->
+    <footer class="rodape">
+        <small>&copy; 2025. Pagina didatica para aula de HTML + CSS</small>
+    </footer>
 </body>
 </html>
